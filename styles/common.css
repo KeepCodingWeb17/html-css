@@ -1,0 +1,36 @@
+.main-bg {
+  background-color: black;
+  background-color: rgb(0, 0, 0);
+  background-color: #3c5aa0;
+  background-color: #000;
+  color: #FFF;
+  opacity: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: blue;
+  margin-top: 80px;
+  margin-right: 40px;
+  margin-left: 40px;
+        /* T R B L*/
+  margin: 80px 40px 0 40px;
+        /* Y X */
+  margin: 80px 40px;
+        /* Todos los lados */
+  margin: 40px;
+  border: 2px solid red;
+  /* border-radius: 15px; */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+         /* T R L F */
+  padding: 20px 20px 20px 20px;
+        /*  Y    X   */
+  padding: 20px 20px;
+  padding: 20px;
+}
