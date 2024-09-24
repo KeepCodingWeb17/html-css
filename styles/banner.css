@@ -1,0 +1,22 @@
+.banner {
+  height: 75vh;
+  align-content: center;
+  position: relative;
+  .bold {
+    font-weight: 700;
+  }
+  .content {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+  }
+  .image {
+    background-image: url('../assets/app/catalog.jpg');
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+  }
+}
