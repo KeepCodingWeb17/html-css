@@ -1,0 +1,36 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: var(--bg-color);
+  .image {
+    width: 20%;
+    min-width: 200px;
+    max-width: 250px;
+  }
+  .nav {
+    .list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+.btn {
+  color: var(--main-text-color);
+  background-color: var(--main-brand-color);
+  text-decoration: none;
+  padding: 0.7rem;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+  /*
+  opacity: 0;
+  visibility: hidden;
+  */
+}
+

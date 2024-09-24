@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="styles/common.css">
   <link rel="stylesheet" href="styles/footer.css">
   <link rel="stylesheet" href="styles/banner.css">
+  <link rel="stylesheet" href="styles/header.css">
   <!--
     <style>
     /*
@@ -41,17 +42,33 @@
   <!--
     Comentario
   -->
-  <h1>Codeflix</h1>
-  <section class="banner">
-    <div class="image"></div>
-    <div class="content">
-      <h2>Unlimited movies, TV shows, and more</h2>
-      <p class="bold">Watch anywhere. Cancel anytime</p>
-      <p>Ready to watch?</p>
-    </div>
-  </section>
-  <p class="bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tempora possimus, consequuntur quod sed veniam? Quae
-    modi pariatur sapiente nulla cumque cum numquam, similique laborum mollitia, saepe ducimus, eligendi molestiae.</p>
+  <header class="header">
+    <img class="image" src="./assets/app/codeflix.png" alt="Codeflix brand">
+    <nav class="nav">
+      <ul class="list">
+        <li class="item">
+          <a class="btn hidden" href="#shows">All shows</a>
+        </li>
+        <li class="item">
+          <a class="btn" href="signin.html">Sign in</a>
+          <!-- <a href="https://google.com" target="_blank" rel="noopener noreferrer">Link externo</a> -->
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Codeflix</h1>
+    <section class="banner">
+      <div class="image"></div>
+      <div class="content">
+        <h2>Unlimited movies, TV shows, and more</h2>
+        <p class="bold">Watch anywhere. Cancel anytime</p>
+        <p>Ready to watch?</p>
+      </div>
+    </section>
+    <p id="shows" class="bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tempora possimus, consequuntur quod sed veniam? Quae
+      modi pariatur sapiente nulla cumque cum numquam, similique laborum mollitia, saepe ducimus, eligendi molestiae.</p>
+  </main>
   <footer class="footer">
     <p>2024 <strong>Codeflix</strong>. All rights reserved</p>
   </footer>
