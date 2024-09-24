@@ -1,0 +1,34 @@
+/*
+.footer {
+  background-color: blue;
+  margin-top: 80px;
+  margin-right: 40px;
+  margin-left: 40px;
+        T R B L
+  margin: 80px 40px 0 40px;
+        Y X
+  margin: 80px 40px;
+        Todos los lados
+  margin: 40px;
+  border: 2px solid red;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+          T R L F
+  padding: 20px 20px 20px 20px;
+          Y    X   
+  padding: 20px 20px;
+  padding: 20px;
+}
+*/
+
+.footer {
+  text-align: center;
+  font-weight: 100;
+  font-style: italic;
+  padding: 2em 0;
+  /*         1rem -> 16px */
+  /*         1em  -> 16px */
+  font-size: 1rem;
+}
