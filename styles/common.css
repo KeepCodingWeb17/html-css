@@ -22,3 +22,29 @@
 * {
   box-sizing: border-box;
 }
+
+@media print {
+  /*
+  .header {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+  .banner {
+    display: none;
+  }
+  */
+  header.header, .footer, .banner {
+    display: none;
+  }
+}
+
+/*
+@media screen and (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #FFF;
+    --main-text-color: #000;
+  }
+}
+*/

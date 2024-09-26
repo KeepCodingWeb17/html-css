@@ -25,9 +25,11 @@
 
 .hidden {
   display: none;
-  /*
-  opacity: 0;
-  visibility: hidden;
-  */
 }
 
+/* @media screen and (min-width: 768px) { */
+@media screen and (width > 768px) {
+  .hidden {
+    display: block;
+  }
+}
