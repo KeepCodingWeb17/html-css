@@ -12,6 +12,12 @@
   }
   .image {
     background-image: url('../assets/app/catalog.jpg');
+    /*
+    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    */
     position: absolute;
     left: 0;
     top: 0;

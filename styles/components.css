@@ -1,0 +1,9 @@
+/* Button */
+.btn {
+  color: var(--main-text-color);
+  background-color: var(--main-brand-color);
+  text-decoration: none;
+  padding: 0.7rem;
+  display: inline-block;
+  border-radius: 5px;
+}
