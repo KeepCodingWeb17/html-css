@@ -1,12 +1,68 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Codeflix signin</title>
 </head>
 <body>
-  <h1>Sign in</h1>
-  <a href="index.html">Back home</a>
+  <h1>Formulario</h1>
+  <form method="post">
+    <div>
+      <label for="mail">Email</label>
+      <input type="email" id="mail" placeholder="Pon tu correo" name="correo" autocomplete="off">
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="pwd">
+    </div>
+    <div>
+      <label for="tel">Enter your phone number</label>
+      <input type="tel" id="tel" name="phone" autocomplete="off">
+    </div>
+    <div>
+      <label for="file">Choose a profile picture</label>
+      <input type="file" id="file" name="profile" accept="image/png">
+    </div>
+    <fieldset>
+      <legend>Fav genre</legend>
+      <label for="shows">shows</label>
+      <input type="radio" id="shows" name="genre" value="shows" checked>
+      <label for="docu">Docus</label>
+      <input type="radio" id="docu" name="genre" value="docus">
+    </fieldset>
+    <!--
+    <fieldset>
+      <legend>Fav programming lang</legend>
+      <label for="js">js</label>
+      <input type="checkbox" name="favlang" id="js" value="js">
+      <label for="python">python</label>
+      <input type="checkbox" name="favlang" id="python" value="python">
+      <label for="c">C#</label>
+      <input type="checkbox" name="favlang" id="c" value="c#">
+    </fieldset>
+    -->
+    <div>
+      <label for="bio">User bio</label>
+      <textarea name="userbio" id="bio" rows="10"></textarea>
+    </div>
+    <div>
+      <label for="remember">Remember me</label>
+      <input type="checkbox" name="remember" id="remember">
+    </div>
+    <button type="button">More info</button>
+    <div>
+      <label for="country">Country</label>
+      <select name="country" id="country">
+        <option value="ES">Spain</option>
+        <option value="CO">Colombia</option>
+        <option value="US">Usa</option>
+      </select>
+    </div>
+    <div>
+      <button type="reset">Reset</button>
+      <button type="submit">Guardar</button>
+    </div>
+  </form>
 </body>
 </html>
