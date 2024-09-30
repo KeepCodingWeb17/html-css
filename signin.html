@@ -7,29 +7,47 @@
 </head>
 <body>
   <h1>Formulario</h1>
-  <form method="post">
+  <form method="post" novalidate>
     <div>
       <label for="mail">Email</label>
-      <input type="email" id="mail" placeholder="Pon tu correo" name="correo" autocomplete="off">
+      <input
+        type="email"
+        id="mail"
+        placeholder="Pon tu correo"
+        name="correo"
+        value="test@test.com"
+        autocomplete="off"
+        readonly
+        required
+        disabled
+      >
     </div>
     <div>
       <label for="password">Password</label>
-      <input type="password" id="password" name="pwd">
+      <input required type="password" id="password" name="pwd">
     </div>
     <div>
       <label for="tel">Enter your phone number</label>
-      <input type="tel" id="tel" name="phone" autocomplete="off">
+      <input
+        required
+        type="tel"
+        id="tel"
+        name="phone"
+        autocomplete="off"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        title="Format (123-123-1234)"
+      >
     </div>
     <div>
       <label for="file">Choose a profile picture</label>
-      <input type="file" id="file" name="profile" accept="image/png">
+      <input required type="file" id="file" name="profile" accept="image/png">
     </div>
     <fieldset>
       <legend>Fav genre</legend>
       <label for="shows">shows</label>
-      <input type="radio" id="shows" name="genre" value="shows" checked>
+      <input required type="radio" id="shows" name="genre" value="shows" checked>
       <label for="docu">Docus</label>
-      <input type="radio" id="docu" name="genre" value="docus">
+      <input required type="radio" id="docu" name="genre" value="docus">
     </fieldset>
     <!--
     <fieldset>
@@ -44,7 +62,7 @@
     -->
     <div>
       <label for="bio">User bio</label>
-      <textarea name="userbio" id="bio" rows="10"></textarea>
+      <textarea required name="userbio" id="bio" rows="10" maxlength="250"></textarea>
     </div>
     <div>
       <label for="remember">Remember me</label>
@@ -53,12 +71,17 @@
     <button type="button">More info</button>
     <div>
       <label for="country">Country</label>
-      <select name="country" id="country">
+      <select required name="country" id="country">
         <option value="ES">Spain</option>
         <option value="CO">Colombia</option>
         <option value="US">Usa</option>
       </select>
     </div>
+    <!--
+    <div>
+      <input type="number" required placeholder="number example" min="0" max="100" step="10">
+    </div>
+    -->
     <div>
       <button type="reset">Reset</button>
       <button type="submit">Guardar</button>
