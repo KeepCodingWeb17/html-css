@@ -1,0 +1,28 @@
+.container {
+  background-image: url('../assets/app/catalog.jpg');
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 4px;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.form__input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  label {
+    margin-bottom: 0.5rem;
+  }
+  input {
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    background: var(--input-bg-color);
+    color: var(--main-text-color);
+  }
+}

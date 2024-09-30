@@ -4,88 +4,93 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Codeflix signin</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/signin.css">
 </head>
-<body>
-  <h1>Formulario</h1>
-  <form method="post" novalidate>
-    <div>
-      <label for="mail">Email</label>
-      <input
-        type="email"
-        id="mail"
-        placeholder="Pon tu correo"
-        name="correo"
-        value="test@test.com"
-        autocomplete="off"
-        readonly
-        required
-        disabled
-      >
-    </div>
-    <div>
-      <label for="password">Password</label>
-      <input required type="password" id="password" name="pwd">
-    </div>
-    <div>
-      <label for="tel">Enter your phone number</label>
-      <input
-        required
-        type="tel"
-        id="tel"
-        name="phone"
-        autocomplete="off"
-        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-        title="Format (123-123-1234)"
-      >
-    </div>
-    <div>
-      <label for="file">Choose a profile picture</label>
-      <input required type="file" id="file" name="profile" accept="image/png">
-    </div>
-    <fieldset>
-      <legend>Fav genre</legend>
-      <label for="shows">shows</label>
-      <input required type="radio" id="shows" name="genre" value="shows" checked>
-      <label for="docu">Docus</label>
-      <input required type="radio" id="docu" name="genre" value="docus">
-    </fieldset>
-    <!--
-    <fieldset>
-      <legend>Fav programming lang</legend>
-      <label for="js">js</label>
-      <input type="checkbox" name="favlang" id="js" value="js">
-      <label for="python">python</label>
-      <input type="checkbox" name="favlang" id="python" value="python">
-      <label for="c">C#</label>
-      <input type="checkbox" name="favlang" id="c" value="c#">
-    </fieldset>
-    -->
-    <div>
-      <label for="bio">User bio</label>
-      <textarea required name="userbio" id="bio" rows="10" maxlength="250"></textarea>
-    </div>
-    <div>
-      <label for="remember">Remember me</label>
-      <input type="checkbox" name="remember" id="remember">
-    </div>
-    <button type="button">More info</button>
-    <div>
-      <label for="country">Country</label>
-      <select required name="country" id="country">
-        <option value="ES">Spain</option>
-        <option value="CO">Colombia</option>
-        <option value="US">Usa</option>
-      </select>
-    </div>
-    <!--
-    <div>
-      <input type="number" required placeholder="number example" min="0" max="100" step="10">
-    </div>
-    -->
-    <div>
-      <button type="reset">Reset</button>
-      <button type="submit">Guardar</button>
-    </div>
-  </form>
+<body class="main-bg container">
+  <main class="card">
+    <h1>Formulario</h1>
+    <form method="post" novalidate>
+      <div class="form__input">
+        <label for="mail">Email</label>
+        <input
+          type="email"
+          id="mail"
+          placeholder="Pon tu correo"
+          name="correo"
+          value="test@test.com"
+          autocomplete="off"
+          readonly
+          required
+        >
+      </div>
+      <div class="form__input">
+        <label for="password">Password</label>
+        <input required type="password" id="password" name="pwd">
+      </div>
+      <div class="form__input">
+        <label for="tel">Enter your phone number</label>
+        <input
+          required
+          type="tel"
+          id="tel"
+          name="phone"
+          autocomplete="off"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          title="Format (123-123-1234)"
+        >
+      </div>
+      <div class="form__input">
+        <label for="file">Choose a profile picture</label>
+        <input required type="file" id="file" name="profile" accept="image/png">
+      </div>
+      <fieldset class="form__input">
+        <legend>Fav genre</legend>
+        <label for="shows">shows</label>
+        <input required type="radio" id="shows" name="genre" value="shows" checked>
+        <label for="docu">Docus</label>
+        <input required type="radio" id="docu" name="genre" value="docus">
+      </fieldset>
+      <!--
+      <fieldset>
+        <legend>Fav programming lang</legend>
+        <label for="js">js</label>
+        <input type="checkbox" name="favlang" id="js" value="js">
+        <label for="python">python</label>
+        <input type="checkbox" name="favlang" id="python" value="python">
+        <label for="c">C#</label>
+        <input type="checkbox" name="favlang" id="c" value="c#">
+      </fieldset>
+      -->
+      <div class="form__input">
+        <label for="bio">User bio</label>
+        <textarea required name="userbio" id="bio" rows="10" maxlength="250"></textarea>
+      </div>
+      <div class="form__input">
+        <label for="remember">Remember me</label>
+        <input type="checkbox" name="remember" id="remember">
+      </div>
+      <button class="btn" type="button">More info</button>
+      <div class="form__input">
+        <label for="country">Country</label>
+        <select required name="country" id="country">
+          <option value="ES">Spain</option>
+          <option value="CO">Colombia</option>
+          <option value="US">Usa</option>
+        </select>
+      </div>
+      <!--
+      <div>
+        <input type="number" required placeholder="number example" min="0" max="100" step="10">
+      </div>
+      -->
+      <div class="form__input">
+        <button class="btn" type="reset">Reset</button>
+        <button class="btn" type="submit">Guardar</button>
+      </div>
+    </form>
+  </main>
 </body>
 </html>
