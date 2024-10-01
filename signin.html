@@ -11,11 +11,12 @@
 </head>
 <body class="main-bg container">
   <main class="card">
-    <h1>Formulario</h1>
+    <h1>Sign in</h1>
     <form method="post" novalidate>
-      <div class="form__input">
+      <div class="form__element">
         <label for="mail">Email</label>
         <input
+          class="input"
           type="email"
           id="mail"
           placeholder="Pon tu correo"
@@ -26,13 +27,14 @@
           required
         >
       </div>
-      <div class="form__input">
+      <div class="form__element">
         <label for="password">Password</label>
-        <input required type="password" id="password" name="pwd">
+        <input class="input" required type="password" id="password" name="pwd">
       </div>
-      <div class="form__input">
+      <div class="form__element">
         <label for="tel">Enter your phone number</label>
         <input
+          class="input"
           required
           type="tel"
           id="tel"
@@ -42,16 +44,18 @@
           title="Format (123-123-1234)"
         >
       </div>
-      <div class="form__input">
-        <label for="file">Choose a profile picture</label>
-        <input required type="file" id="file" name="profile" accept="image/png">
+      <div class="form__element">
+        <label class="btn secondary" for="file">Choose a profile picture</label>
+        <input class="pointer" required type="file" id="file" name="profile" accept="image/png">
       </div>
-      <fieldset class="form__input">
+      <fieldset class="form__element">
         <legend>Fav genre</legend>
-        <label for="shows">shows</label>
-        <input required type="radio" id="shows" name="genre" value="shows" checked>
-        <label for="docu">Docus</label>
-        <input required type="radio" id="docu" name="genre" value="docus">
+        <div>
+          <label for="shows">shows</label>
+          <input required type="radio" id="shows" name="genre" value="shows" checked>
+          <label for="docu">Docus</label>
+          <input required type="radio" id="docu" name="genre" value="docus">
+        </div>
       </fieldset>
       <!--
       <fieldset>
@@ -64,18 +68,24 @@
         <input type="checkbox" name="favlang" id="c" value="c#">
       </fieldset>
       -->
-      <div class="form__input">
+      <div class="form__element">
         <label for="bio">User bio</label>
-        <textarea required name="userbio" id="bio" rows="10" maxlength="250"></textarea>
+        <textarea class="input" required name="userbio" id="bio" rows="10" maxlength="250"></textarea>
       </div>
-      <div class="form__input">
-        <label for="remember">Remember me</label>
-        <input type="checkbox" name="remember" id="remember">
+      <div class="form__element">
+        <div>
+          <input type="checkbox" name="remember" id="remember">
+          <label class="pointer" for="remember">Remember me</label>
+        </div>
       </div>
-      <button class="btn" type="button">More info</button>
-      <div class="form__input">
+      <!--
+        <div class="form__element">
+          <button class="btn" type="button">More info</button>
+        </div>
+      -->
+      <div class="form__element">
         <label for="country">Country</label>
-        <select required name="country" id="country">
+        <select class="input" required name="country" id="country">
           <option value="ES">Spain</option>
           <option value="CO">Colombia</option>
           <option value="US">Usa</option>
@@ -86,9 +96,9 @@
         <input type="number" required placeholder="number example" min="0" max="100" step="10">
       </div>
       -->
-      <div class="form__input">
-        <button class="btn" type="reset">Reset</button>
-        <button class="btn" type="submit">Guardar</button>
+      <div class="form__actions">
+        <button class="btn secondary" type="reset">Reset</button>
+        <button class="btn" type="submit">Register</button>
       </div>
     </form>
   </main>

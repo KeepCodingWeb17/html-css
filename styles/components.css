@@ -6,4 +6,63 @@
   padding: 0.7rem;
   display: inline-block;
   border-radius: 5px;
+  border: 1px solid var(--main-brand-color);
+  &.secondary {
+    background-color: transparent;
+    border: 1px solid var(--main-text-color);
+  }
 }
+/*
+.btn.secondary {
+}
+*/
+@media screen and (hover: hover) {
+  .pointer {
+    cursor: pointer;
+  }
+  .btn {
+    cursor: pointer;
+    &:hover {
+      background-color: var(--main-brand-color-light);
+    }
+    &.secondary:hover {
+      background-color: var(--border-color);
+    }
+  }
+  /*
+  .btn:hover {
+  }
+  */
+}
+
+/* form classes */
+.form__element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  label {
+    margin-bottom: 0.5rem;
+  }
+  .input {
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    background: var(--input-bg-color);
+    color: var(--main-text-color);
+  }
+  input[type="file"] {
+    display: none;
+  }
+}
+/*
+id -> #id
+class -> .class
+tag -> p, button, h1
+all -> *
+attribute -> 
+*/
+/*
+.form__element .input {
+
+}
+*/
