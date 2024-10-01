@@ -7,10 +7,20 @@
   display: inline-block;
   border-radius: 5px;
   border: 1px solid var(--main-brand-color);
+  /*
+  transition: background-color 0.3s;
+  transition-timing-function: ease-in-out;
+  */
+  width: 100px;
+  transition: background-color 0.3s linear, width 3s linear;
   &.secondary {
     background-color: transparent;
     border: 1px solid var(--main-text-color);
   }
+}
+
+.wide {
+  width: 200px;
 }
 /*
 .btn.secondary {
@@ -24,6 +34,7 @@
     cursor: pointer;
     &:hover {
       background-color: var(--main-brand-color-light);
+      width: 180px;
     }
     &.secondary:hover {
       background-color: var(--border-color);
