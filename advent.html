@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advent</title>
+  <style>
+    div {
+      font-size: 2rem;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+    }
+    .item {
+      background-color: blue;
+      min-height: 100px;
+      padding: 10px;
+      border: 1px solid;
+      border-radius: 5px;
+      /* span */
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    .wide {
+      grid-column: span 2;
+      background-color: red;
+    }
+    .tall {
+      grid-row: span 2;
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item tall">1</div>
+    <div class="item">2</div>
+    <div class="item wide">3</div>
+    <div class="item wide">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item wide">8</div>
+    <div class="item">9</div>
+    <div class="item wide">10</div>
+    <div class="item">11</div>
+    <div class="item tall">12</div>
+    <div class="item">13</div>
+    <div class="item">14</div>
+    <div class="item wide">14</div>
+  </div>
+</body>
+</html>
