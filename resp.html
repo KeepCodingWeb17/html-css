@@ -15,12 +15,24 @@
       object-fit: contain;
       object-position: top;
     }
+    img {
+      width: 100%;
+    }
   </style>
 </head>
 <body>
-  <!-- 1. posicion image -->
+  <!-- 1. posicion image 
   <img class="catalog" src="assets/app/catalog.jpg">
+  -->
   <!-- 2. <picture> -->
+  <picture>
+    <!--  dog_small.jpg   dog_medium.jpg    dog_large.jpg                 -->
+    <!--  0px           800px               1200px                       ♾px-->
+    <source srcset="assets/responsive-images/dog_large.jpg" media="(width > 1200px)">
+    <source srcset="assets/responsive-images/dog_medium.jpg" media="(min-width: 800px)">
+    <source srcset="assets/responsive-images/dog_small.jpg" media="(max-width: 800px)">
+    <img src="assets/responsive-images/dog_large.jpg">
+  </picture>
   <!-- 3 srcset -->
 </body>
 </html>
