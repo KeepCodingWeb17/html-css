@@ -112,13 +112,38 @@
         }
       }
     }
-    
+    label + input {
+      border-color: red;
+    }
+    ul {
+      &.list > li {
+        border-bottom: 1px solid white;
+      }
+    }
   </style>
 </head>
 
 <body class="main-bg">
+  <label for="test">test</label>
+  <input type="text" id="test">
+
+  <input type="text" id="test">
+
   <div class="spinner"></div>
   <div class="progress"></div>
+  <ul class="list">
+    <li>
+      Example 1
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </li>
+    <li>Example 2</li>
+    <li>Example 3</li>
+    <li>Example 4</li>
+  </ul>
   <!--
     Comentario
   -->
