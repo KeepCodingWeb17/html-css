@@ -41,9 +41,84 @@
     }
   </style>
   -->
+  <style>
+    .spinner {
+      margin: 4rem;
+      border-left: 5px solid red;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      /*
+      animation-name: test;
+      animation-duration: 10s;
+      animation-timing-function: linear;
+      animation-direction: reverse;
+      animation-iteration-count: 1;
+      */
+      animation: spinner 1s linear infinite;
+    }
+    .progress {
+      height: 20px;
+      background-color: red;
+      width: 0;
+      position: fixed;
+      top: 0;
+      z-index: 999;
+      animation: progress 1s linear;
+      animation-fill-mode: forwards;
+    }
+    @media screen and (prefers-reduced-motion: no-preference) {
+      @keyframes spinner {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(180deg);
+          border-left: 5px solid black;
+        }
+        100% {
+          transform: rotate(360deg);
+          border-left: 5px solid red;
+        }
+      }
+      @keyframes test {
+        0% {
+          width: 50px;
+        }
+        25% {
+          width: 100px;
+          background-color: blue;
+        }
+        60% {
+          width: 25px;
+          background-color: blueviolet;
+        }
+        100% {
+          width: 50px;
+          background-color: red;
+        }
+      }
+      @supports (animation-timeline: scroll()) {
+        .progress {
+          animation-timeline: scroll();
+        }
+      }
+      @keyframes progress {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+    }
+    
+  </style>
 </head>
 
 <body class="main-bg">
+  <div class="spinner"></div>
+  <div class="progress"></div>
   <!--
     Comentario
   -->
