@@ -1,5 +1,5 @@
-[![GitHub issues](https://img.shields.io/github/issues/KeepCodingWeb17/html-css-practica)](https://github.com/KeepCodingWeb17/html-css-practica/issues)
-[![GitHub stars](https://img.shields.io/github/stars/KeepCodingWeb17/html-css-practica)](https://github.com/KeepCodingWeb17/html-css-practica/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/KeepCodingWeb17/html-css)](https://github.com/KeepCodingWeb17/html-css/issues)
+[![GitHub stars](https://img.shields.io/github/stars/KeepCodingWeb17/html-css)](https://github.com/KeepCodingWeb17/html-css/stargazers)
 
 ## Portfolio exercise
 
