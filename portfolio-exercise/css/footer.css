@@ -1,0 +1,28 @@
+/* footer */
+.footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+  .link svg {
+    max-width: 30px;
+  }
+  svg {
+    width: 100%;
+    transition: fill .3s linear;
+  }
+}
+
+.rrss {
+  width: 60%;
+  max-width: 220px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (hover: hover) {
+  .footer svg:hover {
+    fill: var(--secondary-brand-color);
+  }
+}

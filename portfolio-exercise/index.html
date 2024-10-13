@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Shin chan</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon-2.ico">
+  <meta name="description" content="Shin chan">
+  <meta property="og:title" content="Shinnosuke Nohara">
+  <meta property="og:description" content="Shinnosuke Nohara, tengo 5 años y no me gusta el pimiento.">
+  <meta property="og:image" content="https://keepcodingweb13.github.io/html-css-practica/images/social.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="image-container">
+      <a href="index.html">
+        <img src="images/shin-chan-logo.jpg" alt="Shin chan familia">
+      </a>
+    </div>
+    <nav class="desktop-menu">
+      <ul class="menu">
+        <li class="list-item">
+          <a href="projects.html">Proyectos</a>
+        </li>
+        <li class="list-item">
+          <a href="#skills">Skills</a>
+        </li>
+        <li class="list-item">
+          <a href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="mobile-menu">
+      <label for="hamburger-input">Menu</label>
+      <input type="checkbox" id="hamburger-input" class="burger-shower" />
+      <label id="hamburger-menu" for="hamburger-input">
+        <ul class="menu">
+          <li class="list-item">
+            <a href="projects.html">Proyectos</a>
+          </li>
+          <li class="list-item">
+            <a href="#skills">Skills</a>
+          </li>
+          <li class="list-item">
+            <a href="#contacto">Contacto</a>
+          </li>
+        </ul>
+        <div class="overlay"></div>
+      </label>
+    </div>
+  </header>
+  <!-- End Navbar -->
+  <main class="main-content">
+    <section class="introduction">
+      <h2>Shinnosuke Nohara</h2>
+      <p>Me llamo Shinnosuke Nohara, tengo 5 años y no me gusta el pimiento. Cuando hay que conquistar, soy todo un profesional,
+        Soy un niño muy ligón, con la fuerza de un ciclón.</p>
+      <p>Si vienes conmigo lo vas a pasar muy bien,
+        Y verás que yo soy especial.</p>
+    </section>
+    <section id="skills" class="skills">
+      <h2>Mis skills</h2>
+      <div class="skill-list">
+        <div class="skill">
+          Patinaje
+          <div class="progress-container">
+            <div class="progress-bar animate-progress-bar w-75" >
+              <span class="sr-only">75% de habilidad en Patinaje</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          Futbol
+          <div class="progress-container">
+            <div class="progress-bar animate-progress-bar w-50">
+              <span class="sr-only">50% de habilidad en Futbol</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          Canto
+          <div class="progress-container">
+            <div class="progress-bar animate-progress-bar w-50">
+              <span class="sr-only">50% de habilidad en Canto</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          Amigable
+          <div class="progress-container">
+            <div class="progress-bar animate-progress-bar w-100">
+              <span class="sr-only">100% de habilidad en Amigable</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          Baile
+          <div class="progress-container">
+            <div class="progress-bar animate-progress-bar w-100">
+              <span class="sr-only">100% de habilidad en Baile</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          Timidez
+          <div class="progress-container">
+            <div class="progress-bar animate-progress-bar w-15">
+              <span class="sr-only">15% de habilidad en Timidez</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <header class="banner">
+    <div class="text-content">
+      <h1>Shin chan portfolio</h1>
+    </div>
+  </header>
+  <form class="form-container" action="/contact" method="post">
+    <div class="input-text-group">
+      <div class="form-group">
+        <label class="text-label" for="name">Nombre</label>
+        <input required type="text" id="name" name="name" placeholder="Pon tu nombre">
+      </div>
+      <div class="form-group">
+        <label class="text-label" for="surname">Apellido</label>
+        <input placeholder="Pon tu apellido" required type="text" name="text" id="surname">
+      </div>
+      <div class="form-group">
+        <label class="text-label" for="phone">Teléfono</label>
+        <input
+          required
+          placeholder="Número de teléfono"
+          id="phone"
+          type="tel"
+          name="phone"
+          pattern="[0-9]+"
+        >
+      </div>
+      <div class="form-group">
+        <label class="text-label" for="githubTag">Github username</label>
+        <input
+          required
+          id="githubTag"
+          type="text"
+          name="githubTag"
+          pattern="^@[^\s]+"
+          placeholder="Con este formato (@<username>)"
+        >
+      </div>
+    </div>
+    <fieldset class="form-group">
+      <legend class="text-label">¿Cómo me conociste?</legend>
+      <div class="radio-group">
+        <label for="university">Universidad</label>
+        <input required type="radio" name="contact" id="university" value="university">
+      </div>
+      <div class="radio-group">
+        <label for="keepcoding">Keepcoding kick-off</label>
+        <input required type="radio" name="contact" id="keepcoding" value="keepcoding">
+      </div>
+      <div class="radio-group">
+        <label for="school">Colegio</label>
+        <input required type="radio" name="contact" id="school" value="school">
+      </div>
+      <div class="radio-group">
+        <label for="github">Github</label>
+        <input required type="radio" name="contact" id="github" value="github">
+      </div>
+    </fieldset>
+
+    <div class="form-group">
+      <label class="text-label" for="moreInfo">Más información</label>
+      <textarea required name="moreInfo" id="moreInfo" maxlength="180" placeholder="Que mas quieres saber" cols="30" rows="10"></textarea>
+    </div>
+    <div class="form-group">
+      <div class="radio-group">
+        <input type="checkbox" name="newsletter" id="newsletter" value="newsletter">
+        <label for="newsletter">Quiero acceso a la newsletter</label>
+      </div>
+    </div>
+    <div>
+      <button class="btn" type="submit">Enviar</button>
+      <input type="reset" class="btn secondary" value="Reset">
+    </div>
+  </form>
+  <footer id="contacto" class="footer main-bg">
+    <div class="rrss">
+      <a class="link" href="https://www.youtube.com/shinchan" target="_blank" rel="noopener noreferrer" aria-label="Shin chan youtube channel">
+        <svg class="youtube" stroke="none" viewBox="0 0 32 32">
+          <path d="M25.3 4.7H6.7C2.9 4.7 0 7.6 0 11.3v9.3c0 3.7 2.9 6.7 6.7 6.7h18.7c3.7 0 6.7-2.9 6.7-6.7v-9.3c-.1-3.7-3-6.6-6.8-6.6zm-4.5 11.7L12 20.5c-.3.1-.5 0-.5-.3v-8.5c0-.3.3-.4.5-.3l8.8 4.4c.3.2.3.5 0 .6z"></path>
+        </svg>
+      </a>
+      <a class="link" href="https://www.instagram.com/shinchan_es_oficial/" target="_blank" rel="noopener noreferrer" aria-label="Shin chan instagram">
+        <svg class="instagram" stroke="none" viewBox="0 0 32 32">
+          <path d="M22.6 0h-13C4.3 0 0 4.3 0 9.5v13C0 27.7 4.3 32 9.5 32h13c5.2 0 9.5-4.3 9.5-9.5v-13c.1-5.2-4.2-9.5-9.4-9.5zm6.3 22.6c0 3.5-2.8 6.3-6.3 6.3h-13c-3.5 0-6.3-2.8-6.3-6.3V9.5c0-3.5 2.8-6.3 6.3-6.3h13c3.5 0 6.3 2.8 6.3 6.3v13.1z"></path>
+          <path d="M16.1 7.8c-4.6 0-8.3 3.7-8.3 8.3s3.7 8.3 8.3 8.3 8.3-3.7 8.3-8.3-3.8-8.3-8.3-8.3zm0 13.4c-2.8 0-5.1-2.3-5.1-5.1s2.3-5.1 5.1-5.1 5.1 2.3 5.1 5.1-2.3 5.1-5.1 5.1z"></path><circle cx="24.4" cy="7.8" r="2"></circle>
+        </svg>
+      </a>
+      <a class="link" href="https://x.com/shinchan_es_" target="_blank" rel="noopener noreferrer" aria-label="Shin chan X">
+        <svg class="fill-current text-black hover:text-primary-500 w-5 h-5 twitter" stroke="none" viewBox="0 0 32 32">
+          <path d="M31.6 5.7c-.7.3-1.5.5-2.3.8.8-.8 1.5-1.7 1.9-2.9.1-.3-.3-.5-.5-.4-1.1.7-2.1 1.1-3.3 1.3H27c-.3 0-.4-.1-.5-.3-1.3-.9-2.9-1.6-4.7-1.6-.7 0-1.5.1-2.1.4-2.3.7-4 2.5-4.5 4.8-.3.8-.3 1.7-.1 2.5v.1l-.1.1C9.8 10.2 5.3 7.8 2.1 4c-.1-.2-.4-.2-.5.1C.9 5 .7 6.2.7 7.6c0 1.9.8 3.6 2 4.9-.5-.3-1.1-.4-1.5-.7-.3-.1-.5 0-.5.3 0 2.8 1.6 5.2 4 6.4h-.2c-.4 0-.8 0-1.2-.1-.3 0-.5.3-.4.4.8 2.5 2.9 4.4 5.5 4.8-2.1 1.5-4.5 2.1-7.1 2.1H.5c-.3 0-.4.1-.5.4 0 .3 0 .5.3.7 2.8 1.6 6.2 2.5 9.5 2.5 2.9 0 5.6-.5 8.2-1.7 2.3-1.1 4.3-2.5 6-4.4 1.6-1.7 2.8-3.9 3.6-6.2.8-2.1 1.2-4.5 1.2-6.7v-.1c0-.4.1-.7.4-.9 1.1-.8 2-1.9 2.8-3.1.1-.2-.2-.6-.4-.5z"></path>
+        </svg>
+      </a>
+    </div>
+  </footer>
+  <!-- End Footer -->
+</body>
+</html>
